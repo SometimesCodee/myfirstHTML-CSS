@@ -1,0 +1,30 @@
+.slide-bar{
+    position: fixed;
+    background-color: white;
+    top: 70px;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    z-index: 101;
+    padding-top: 10px;
+}
+.option{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.15s;
+    cursor: pointer;
+    flex-direction: column;
+}
+.option:hover{
+    background-color: lightgray;
+}
+.option img{
+    height: 32px;
+    width: 32px;
+    margin-bottom: 5px;
+}
+.option div{
+    font-size: 10px;
+}

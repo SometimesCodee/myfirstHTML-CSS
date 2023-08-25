@@ -1,0 +1,192 @@
+.header{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-bottom-color: rgb(212, 212, 212);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    background-color: white;
+    z-index: 100;
+}
+
+.left-section{
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.middle-section{
+    flex: 1;
+    margin-left:70px;
+    margin-right: 35px;
+    max-width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.three{
+    width: 30px;
+    height: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.yt-logo{
+    width: 130px;
+    height: 50px;
+    cursor: pointer;
+}
+.search{
+    height: 40px;
+    flex: 1;
+    width: 0;
+    min-width: 0;
+    font-size: 16px;
+
+    border: 1px solid gray;
+
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    align-items: center;
+    background-color: white;
+    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.15);
+    padding-left: 10px;
+}
+.search::placeholder{
+    font-size: 16px;
+}
+.find-button{
+    height: 43px;
+    width: 70px;
+
+    border: 1px solid gray;
+
+    border-radius: 0px;
+    background-color:rgb(247, 247, 247);
+    margin-left: -1px;
+    cursor: pointer;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.15s;
+    
+}
+.tooltip{
+    position: absolute;
+    font-size: 13px;
+    padding: 5px 8px 5px 8px;
+    background-color: rgba(122, 121, 121, 1);
+    border-radius: 2px;
+    bottom: -25px;
+    color: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+    white-space: nowrap;
+
+}
+.voice-button{
+    width: 43px;
+    height: 43px;
+    cursor: pointer;
+    border: none;
+    border-radius: 23px;
+    margin-left: 10px;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.15s;
+    
+}
+.voice-button:hover .tooltip,
+.find-button:hover .tooltip,
+.upload-button:hover .tooltip,
+.app-button:hover .tooltip,
+.note:hover .tooltip{
+    opacity: 1;
+}
+.find{
+    width: 27px;
+    height: 27px;
+}
+.voice{
+    width: 25px;
+    height: 25px;
+}
+
+.right-section{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    width: 200px;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+
+.avt{
+    width: 35px;
+    height: 35px;
+    border-radius: 17px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.upload{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.app{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.noti{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.note{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.15s;
+}
+.noti-count{
+    position: absolute;
+    background-color: rgb(199, 9, 9);
+    color: white;
+    padding: 2px 5px 2px 5px;
+    border-radius: 15px;
+    font-size: 11px;
+    font-family: Arial;
+    top: 0;
+    right: -2px;
+}
+.note .tooltip,
+.upload-button .tooltip,
+.app-button .tooltip{
+    position: absolute;
+    bottom: -47px;
+}
+.upload-button,
+.app-button{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.15s;
+}

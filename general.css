@@ -1,0 +1,11 @@
+p{
+    font-family: Arial;
+}
+body{
+    margin: 0;
+    margin-left: 80px;
+    background-color: whitesmoke;
+    font-family: Arial;
+}
+/*let set position absolute inside position relative*/
+/* white-space: nowrap : the sentence only on 1 line*/
